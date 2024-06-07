@@ -8,13 +8,19 @@ const config: Config = {
   ],
   theme: {
     extend: {
+    
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "radial-hero": "radial-gradient(circle at center,  #EA168E 0%, #1F154B 72%)",
       },
+
+      fontFamily: {
+        sans: ['Manrope', 'ui-sans-serif', 'system-ui']
+      }
     },
   },
   plugins: [],
 };
 export default config;
+
+// hsl(0, 0%, 50.2%), hsl(292.5, 72%, 18.8%);;
+// (circle at center, #EA168E 0%, #1F154B 72%)
