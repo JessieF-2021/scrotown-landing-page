@@ -15,6 +15,16 @@ const config: Config = {
 
       fontFamily: {
         sans: ['Manrope', 'ui-sans-serif', 'system-ui']
+      },
+      
+      colors: {
+        twitter: "#FFFFFF",
+        instagram: "#F00073",
+        whatsapp: "#25D366",
+        facebook: "#1877F2",
+        linkedin: "#2867B2",
+        youtube: "#FF0000",
+        tiktok: "#000000"
       }
     },
   },

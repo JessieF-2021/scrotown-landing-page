@@ -7,4 +7,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.footer-head {
+    @apply uppercase  pb-4 text-[18px] font-[800] text-[#FFFFFF] leading-[19.8px] tracking-[-4%]
+}
 
+.footer-p {
+    @apply text-[16px] text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%] py-3
+}

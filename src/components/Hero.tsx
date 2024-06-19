@@ -22,7 +22,8 @@ function Hero() {
         <div className="flex justify-center">
           <div className="border rounded-[12px] p-[10px] bg-[#ADADAD4D] w-100 relative">
             <div className="absolute inset-y-0 left-4 flex items-center mx-2 ">
-              <Image src={search} alt="search btn" className="" />
+              <Image src={search} alt="search btn" />
+              {/* className="inline-block absolute top-6 left-8" */}
             </div>
             <input
               type="text"

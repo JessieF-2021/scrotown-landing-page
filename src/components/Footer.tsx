@@ -6,33 +6,45 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { LuYoutube } from "react-icons/lu";
 import { RiTiktokLine } from "react-icons/ri";
+import Link from "next/link";
+
 
 function Footer() {
+
+  const socialMediaLinks = [
+  { icon: <FaXTwitter size={24}/>, label: "Twitter", backgroundColor: "bg-twitter", textColor: "text-black", link: "/twitter"},
+  { icon: <FaInstagram size={24}/>, label: "Instagram", backgroundColor: "bg-instagram", textColor: "text-white", link: "/instagram" },
+  { icon: <FaWhatsapp size={24}/>, label: "WhatsApp", backgroundColor: "bg-whatsapp", textColor: "text-white", link: "/whatsapp" },
+  { icon: < FaFacebook size={24}/>, label: "Facebook", backgroundColor: "bg-facebook", textColor: "text-white", link: "/facebook" },
+  { icon: <FaLinkedinIn size={24}/>, label: "LinkedIn", backgroundColor: "bg-linkedin", textColor: "text-white", link: "/linkedin" },
+  { icon: <LuYoutube size={24}/>, label: "YouTube", backgroundColor: "bg-youtube", textColor: "text-white", link: "/youtube" },
+  { icon: <RiTiktokLine size={24}/>, label: "Tiktok", backgroundColor: "bg-tiktok", textColor: "text-white", link: "/tiktok" }
+]
   return (
     <div className="">
       <div className="bg-[#1D171F] grid grid-cols-4 p-[72px]">
         {/* card 1 */}
         <div>
-          <h2 className="uppercase  pb-4 text-[18px] font-[800] text-[#FFFFFF] leading-[19.8px] tracking-[-4%]">
+          <h2 className="footer-head">
             Information
           </h2>
 
-          <p className="text-[16px] text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%] py-3">
+          <p className="footer-p">
             About Us
           </p>
-          <p className="text-[16px] text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%] py-3">
+          <p className="footer-p">
             We are hiring!
           </p>
-          <p className="text-[16px] text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%] py-3">
+          <p className="footer-p">
             Terms & Conditions
           </p>
-          <p className="text-[16px] text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%] py-3">
+          <p className="footer-p">
             Privacy Policy
           </p>
-          <p className="text-[16px] text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%] py-3">
+          <p className="footer-p">
             BilingPolicy
           </p>
-          <p className="text-[16px] text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%] py-3">
+          <p className="footer-p">
             Copyright Infringement Policy
           </p>
         </div>
@@ -40,64 +52,78 @@ function Footer() {
         {/* card 2 */}
 
         <div>
-          <h2 className="uppercase pb-4 text-[18px] font-[800] text-[#FFFFFF] leading-[19.8px] tracking-[-4%]">
+          <h2 className="footer-head">
             Support
           </h2>
-          <p className="text-[16px] text-[#AFAFAF] py-3 font-[700] leading-[17.6px] tracking-[-2%]">
+          <p className="footer-p">
             support@name.com.gh
           </p>
-          <p className="text-[16px] text-[#AFAFAF] py-3 font-[700] leading-[17.6px] tracking-[-2%]">
+          <p className="footer-p">
             Safety Tips
           </p>
-          <p className="text-[16px] text-[#AFAFAF] py-3 font-[700] leading-[17.6px] tracking-[-2%]">
+          <p className="footer-p">
             Contact Us
           </p>
-          <p className="text-[16px] text-[#AFAFAF] py-3 font-[700] leading-[17.6px] tracking-[-2%]">
+          <p className="footer-p">
             FAQ's
           </p>
         </div>
         {/* card 3 */}
 
         <div>
-          <h2 className="uppercase pb-4 text-[18px] font-[800] text-[#FFFFFF] leading-[19.8px] tracking-[-4%]">
+          <h2 className="footer-head">
             Features
           </h2>
-          <p className="text-[16px] py-3 text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%]">
+          <p className="footer-p">
             Home
           </p>
-          <p className="text-[16px] py-3 text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%]">
+          <p className="footer-p">
             Sell Product
           </p>
-          <p className="text-[16px] py-3 text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%]">
+          <p className="footer-p">
             Messages
           </p>
-          <p className="text-[16px] py-3 text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%]">
+          <p className="footer-p">
             Premium Offer
           </p>
-          <p className="text-[16px] py-3 text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%]">
+          <p className="footer-p">
             Cart
           </p>
-          <p className="text-[16px] py-3 text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%]">
+          <p className="footer-p">
             Saved
           </p>
-          <p className="text-[16px] py-3 text-[#AFAFAF] font-[700] leading-[17.6px] tracking-[-2%]">
+          <p className="footer-p">
             Notifications
           </p>
         </div>
 
         {/* card 4 */}
         <div>
-          <h2 className="uppercase pb-4 text-[18px] font-[800] text-[#FFFFFF] leading-[19.8px] tracking-[-4%]">
+          <h2 className="footer-head">
             Social Media
           </h2>
-          <div className="flex gap-4 py-3">
-            <FaXTwitter className="bg-[#FFFFFF] w-[32px] h-[32px] rounded-[50%] text-center py-[9px] px-[8px]" />
-            <FaInstagram className="text-[#FFFFFF] bg-[#F00073] w-[32px] h-[32px] rounded-[50%] text-center p-[7.7px]" />
-            <FaWhatsapp className="text-[#FFFFFF] bg-[#25D366] w-[32px] h-[32px] rounded-[50%] text-center p-[8px]" />
-            <FaFacebook className="text-[#FFFFFF] bg-[#1877f2] w-[32px] h-[32px] rounded-[50%] text-center p-[8px]" />
-            <FaLinkedinIn className="text-[#FFFFFF] bg-[#2867B2] w-[32px] h-[32px] rounded-[50%] text-center p-[8px]" />
-            <LuYoutube className="text-[#FFFFFF] bg-[#FF0000] w-[32px] h-[32px] rounded-[50%] text-center px-[8px] py-[10.4px]" />
-            <RiTiktokLine className="text-[#FFFFFF] bg-[#000000] w-[32px] h-[32px] rounded-[50%] text-center py-[8px] px-[9px]" />
+          {/* <ul className="flex space-x-4 gap-4">
+            {socialMediaLinks.map((social: any) => {
+              return (
+
+                <li key={social.label}>
+                  
+                 <Link href={social.link}>{social.icon}</Link> 
+
+                </li>
+              )
+            })}
+          </ul> */}
+
+          <div className="flex gap-4 social-icon p-2">
+            {socialMediaLinks.map((social) => (
+              <Link href={social.link} key={social.label} target="_blank" rel="noopener noreferrer" aria-label={social.label}
+              className={`rounded-full p-2 ${social.backgroundColor} ${social.textColor}`}>
+        
+                {social.icon}
+                
+                </Link>
+            ))}
           </div>
           <p className="text-[16px] py-3 text-[#AFAFAF] font-[700] leading-[15.4px] tracking-[-4%]">
             Get exclusive assets sent straight to your inbox
